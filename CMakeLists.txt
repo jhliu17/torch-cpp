@@ -24,6 +24,19 @@ CXX_STANDARD_REQUIRED YES
 )
 target_link_libraries(LogisticRegression ${TORCH_LIBRARIES})
 
+# MLP
+add_executable(MLP)
+target_sources(MLP PRIVATE mlp/src/main.cpp
+                           mlp/src/mlp.cpp
+                           mlp/include/mlp.h 
+)
+target_include_directories(MLP PRIVATE mlp/include)
+set_target_properties(MLP PROPERTIES
+CXX_STANDARD 14
+CXX_STANDARD_REQUIRED YES
+)
+target_link_libraries(MLP ${TORCH_LIBRARIES})
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
