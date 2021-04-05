@@ -15,5 +15,5 @@ libtorch == 1.7.0
 ## Practice Items
 - [x] [Linear Regression on Toy Dataset](./linear_regression.cpp)
 - [x] [Logistic Regression on MNIST](./logistic_regression.cpp)
-- [x] [Multi-layer Perceptron on MNIST](./mlp/)
+- [x] [Multiple Layer Perceptron on MNIST](./mlp/)
 - [ ] RNN Language Model on PennTreeBank 
