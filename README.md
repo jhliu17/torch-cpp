@@ -13,7 +13,7 @@ libtorch >= 1.7.0
 [PennTreeBank](https://github.com/wojzaremba/lstm/tree/master/data)
 
 ## Practice Items
-- [x] Linear Regression on Toy Dataset
-- [x] Logistic Regression on MNIST
-- [x] Multi-layer Perceptron on MNIST
+- [x] [Linear Regression on Toy Dataset](./linear_regression.cpp)
+- [x] [Logistic Regression on MNIST](./logistic_regression.cpp)
+- [x] [Multi-layer Perceptron on MNIST](./mlp/)
 - [ ] RNN Language Model on PennTreeBank 
