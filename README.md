@@ -4,8 +4,8 @@ A minimalist practice project on Libtorch
 ## Requirements
 Build and Test on Mac OS with Clang++ (C++ 14)
 ```
-cmake
-libtorch >= 1.7.0
+cmake >= 3.0.0
+libtorch == 1.7.0
 ```
 
 ## Datasets
