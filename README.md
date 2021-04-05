@@ -1,5 +1,5 @@
 # Torch C++ Practice
-A minimalist practice project on Libtorch
+A minimalist practice project on libtorch
 
 ## Requirements
 Build and Test on Mac OS with Clang++ (C++ 14)
