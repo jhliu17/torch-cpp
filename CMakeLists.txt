@@ -37,6 +37,24 @@ CXX_STANDARD_REQUIRED YES
 )
 target_link_libraries(MLP ${TORCH_LIBRARIES})
 
+# RNN Language Model
+add_executable(RNNLM)
+target_sources(RNNLM PRIVATE language_model/src/main.cpp
+                             language_model/src/rnn_lm.cpp
+                             language_model/src/dictionary.cpp
+                             language_model/src/corpus.cpp
+                             language_model/include/rnn_lm.h
+                             language_model/include/dictionary.h
+                             language_model/include/corpus.h
+                             language_model/include/tqdm.h
+)
+target_include_directories(RNNLM PRIVATE language_model/include)
+set_target_properties(RNNLM PROPERTIES
+CXX_STANDARD 14
+CXX_STANDARD_REQUIRED YES
+)
+target_link_libraries(RNNLM ${TORCH_LIBRARIES})
+
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
 include(CPack)
