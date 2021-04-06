@@ -16,6 +16,8 @@ make
 ```
 
 ## Datasets
+Download datasets to your custom place and modify the data path in your code
+
 [MNIST](http://yann.lecun.com/exdb/mnist/)
 [PennTreeBank](https://github.com/wojzaremba/lstm/tree/master/data)
 
