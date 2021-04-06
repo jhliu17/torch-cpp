@@ -2,10 +2,17 @@
 A minimal practice project on libtorch
 
 ## Requirements
-Build and Test on Mac OS with Clang++ (C++ 14)
 ```
 cmake >= 3.0.0
 libtorch == 1.7.0
+```
+
+Build and Test on Mac OS with Clang++ (C++ 14)
+```
+mkdir build
+cd build
+cmake ..
+make
 ```
 
 ## Datasets
