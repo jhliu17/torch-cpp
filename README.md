@@ -22,4 +22,4 @@ Download datasets to your custom place and modify the data path in your code: [M
 - [x] [Linear Regression on Toy Dataset](./linear_regression.cpp)
 - [x] [Logistic Regression on MNIST](./logistic_regression.cpp)
 - [x] [Multiple Layer Perceptron on MNIST](./mlp/)
-- [ ] RNN Language Model on PennTreeBank 
+- [x] [RNN Language Model on PennTreeBank](./language_model/)
