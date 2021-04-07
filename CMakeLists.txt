@@ -9,7 +9,7 @@ set(PyTorch_version "1.7.0")
 find_package(Torch ${PyTorch_version} EXACT QUIET PATHS "${CMAKE_SOURCE_DIR}/libtorch")
 
 # Linear Regression
-add_executable(LinearRegression linear_regression.cpp)
+add_executable(LinearRegression linear_regression/linear_regression.cpp)
 set_target_properties(LinearRegression PROPERTIES
 CXX_STANDARD 14
 CXX_STANDARD_REQUIRED YES
@@ -17,7 +17,7 @@ CXX_STANDARD_REQUIRED YES
 target_link_libraries(LinearRegression ${TORCH_LIBRARIES})
 
 # Logistic Regression
-add_executable(LogisticRegression logistic_regression.cpp)
+add_executable(LogisticRegression logistic_regression/logistic_regression.cpp)
 set_target_properties(LogisticRegression PROPERTIES
 CXX_STANDARD 14
 CXX_STANDARD_REQUIRED YES
