@@ -37,6 +37,24 @@ CXX_STANDARD_REQUIRED YES
 )
 target_link_libraries(MLP ${TORCH_LIBRARIES})
 
+# RNN Language Model
+add_executable(RNNLM)
+target_sources(RNNLM PRIVATE language_model/src/main.cpp
+                             language_model/src/rnn_lm.cpp
+                             language_model/src/dictionary.cpp
+                             language_model/src/corpus.cpp
+                             language_model/include/rnn_lm.h
+                             language_model/include/dictionary.h
+                             language_model/include/corpus.h
+                             language_model/include/tqdm.h
+)
+target_include_directories(RNNLM PRIVATE language_model/include)
+set_target_properties(RNNLM PROPERTIES
+CXX_STANDARD 14
+CXX_STANDARD_REQUIRED YES
+)
+target_link_libraries(RNNLM ${TORCH_LIBRARIES})
+
 # Corpus Lib
 add_library(CORPUS SHARED language_model/src/corpus.cpp
                            language_model/src/dictionary.cpp
@@ -59,25 +77,7 @@ SET_TARGET_PROPERTIES(CORPUS_STAIC PROPERTIES OUTPUT_NAME "corpus"
 target_link_libraries(CORPUS ${TORCH_LIBRARIES})
 target_link_libraries(CORPUS_STAIC ${TORCH_LIBRARIES})
 
-# RNN Language Model
-add_executable(RNNLM)
-target_sources(RNNLM PRIVATE language_model/src/main.cpp
-                             language_model/src/rnn_lm.cpp
-                             language_model/src/dictionary.cpp
-                             language_model/src/corpus.cpp
-                             language_model/include/rnn_lm.h
-                             language_model/include/dictionary.h
-                             language_model/include/corpus.h
-                             language_model/include/tqdm.h
-)
-target_include_directories(RNNLM PRIVATE language_model/include)
-set_target_properties(RNNLM PROPERTIES
-CXX_STANDARD 14
-CXX_STANDARD_REQUIRED YES
-)
-target_link_libraries(RNNLM ${TORCH_LIBRARIES})
-
-# RNN Language Model with Dynamic Linking
+# RNN Language Model with Linking
 add_executable(RNNLM_DL)
 target_sources(RNNLM_DL PRIVATE language_model/src/main.cpp
                                 language_model/src/rnn_lm.cpp
