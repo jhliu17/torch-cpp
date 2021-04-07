@@ -21,8 +21,8 @@ Download datasets to custom place and modify the data path in your code
 - [PennTreeBank](https://github.com/wojzaremba/lstm/tree/master/data)
 
 ## Practice Items
-- [x] [Linear Regression on Toy Dataset](./linear_regression/)
-- [x] [Logistic Regression on MNIST](./logistic_regression/)
-- [x] [Multiple Layer Perceptron on MNIST](./mlp/)
-- [x] [RNN Language Model on PennTreeBank](./language_model/)
-- [x] [Cmake with Linking](./CMakeLists.txt)
+- [Linear Regression on Toy Dataset](./linear_regression/)
+- [Logistic Regression on MNIST](./logistic_regression/)
+- [Multiple Layer Perceptron on MNIST](./mlp/)
+- [RNN Language Model on PennTreeBank](./language_model/)
+- [Cmake with Linking](./CMakeLists.txt)
